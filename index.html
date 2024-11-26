@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css
+"> 
+ <style>
+.moda-dialog{
+display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.demo .bt{
+margin:20px;
+}
+</style> 
+</head>
+<body>
+
+<div class="container">
+  <h2>Modal Example</h2>
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h2 class="modal-title"><img class="lib-img-show" src="https://pentagram-production.imgix.net/bf71f972-52fd-4432-abed-96685edf8e9c/ps_houzz_01.png?crop=edges&fit=crop&h=630&rect=31%2C0%2C12450%2C7793&w=1200" alt="HTML tutorial" style="width:45px;height:30px;">houzz card</h2>
+        </div>
+        <div class="modal-body">
+         
+<button onclick="houzzedit()" class="btn btn-default" role="button"><i class="fa fa-pencil"></i> Edit</button>
+<button onclick="houzzleads()" class="btn btn-default" role="button"><i class="fa fa-line-chart"></i> Leads</button>
+<a href="#" class="btn btn-default"><i class="fa fa-trash"></i> <strong>Delete</strong></a>
+<a href="#" class="btn btn-default"><i class="fa fa-align-justify"></i> <strong>List</strong></a>
+
+        
+        
+        
+          <button onclick="houzz()" class="btn btn-primary" role="button" data-toggle="modal" data-target="#screencover"><i class="fa fa-external-link"></i> Open</button>
+          
+          
+  <div class="btn-group">
+    <button type="button" class="btn btn-primary"><i class="fa fa-user"></i> Account</button>
+    <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">
+      <span class="caret"></span>
+    </button>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="#">Create</a>
+      <br>
+      
+      <a class="dropdown-item" href="#">Delete</a>
+    </div>
+  </div>
+       
+          
+          
+       
+        
+
+<br>
+<h3>Make a note</h3>
+<textarea rows="10" cols="75" name="t3" id="output" placeholder="Make a note for yourself or to share with your team">
+</textarea>  
+        
+        
+        
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Save</button>
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+
+<script>
+function houzzleads() {
+  window.open("https://pro.houzz.com/manage/leads", "_blank", "toolbar=no,scrollbars=yes,resizable=yes,top=160,left=200,width=1000,height=500");
+  
+}
+
+function houzzedit() {
+  window.open("https://www.houzz.com/editProfile/", "_blank", "toolbar=no,scrollbars=yes,resizable=yes,top=160,left=200,width=1000,height=500");
+  
+}
+
+function houzz() {
+  window.open("https://houzz.com", "_blank", "toolbar=no,scrollbars=yes,resizable=yes,top=160,left=200,width=1000,height=500");
+  
+}
+</script>
+
+</body>
+</html>
