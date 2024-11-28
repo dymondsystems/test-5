@@ -1,1 +1,16 @@
-test
+<!DOCTYPE html>
+<html>
+<head>
+  <title>New Page</title>
+</head>
+<body>
+  <p id="nameDisplay"></p>
+
+  <script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const name = urlParams.get('name');
+
+    document.getElementById('nameDisplay').textContent = `Hello, ${name}!`;
+  </script>
+</body>
+</html>
